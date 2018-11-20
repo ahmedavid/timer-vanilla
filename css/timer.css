@@ -5,7 +5,7 @@
     right: 0;
     background: #f8f9fa;
     width: 400px;
-    max-height: 250px;
+    min-height: 250px;
     border: 1px solid #007bff;
     border-radius: 5px;
     display: inline-block;
@@ -20,12 +20,12 @@
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     border-bottom: 1px solid #007bff;
-    background: #007bff;;
+    background: #007bff;
     position: relative;
 }
 
 .timer-card-body{
-    height: 200px;
+    min-height: 200px;
     box-sizing: border-box;
     width: 100%;
 }
@@ -50,6 +50,7 @@
     cursor: pointer;
     color:#f8f9fa;
 }
+
 
 .timer-display{
     font-size: 48px;
@@ -103,8 +104,8 @@
 }
 
 .blink {
-    animation: blink-animation 1s steps(5, start) infinite;
-    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+    animation: blink-animation 1.5s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1.5s steps(5, start) infinite;
   }
   @keyframes blink-animation {
     to {
@@ -116,3 +117,24 @@
       visibility: hidden;
     }
   }
+
+.sessions-display-container{
+    width: 100%;
+    margin: 10px auto;
+}
+
+.sessions-display-header{
+    position: relative;
+    background: #007bff;
+    padding: 5px 10px;
+    color: #f8f9fa;
+    font-size: 12px;
+}
+
+.sessions-display-header-minimize-button{
+    position: absolute;
+    cursor: pointer;
+    color: #f8f9fa;
+    right: 15px;
+    top: 5px;
+}
